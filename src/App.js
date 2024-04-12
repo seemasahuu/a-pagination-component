@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Pggination from "./Pggination";
+ 
+
 
 function App() {
   return (
     <div className="App">
-      <h1>ram</h1>
+      <Routes>
+        <Route path="/" element={<Pggination />} />
+      </Routes>
     </div>
   );
 }
